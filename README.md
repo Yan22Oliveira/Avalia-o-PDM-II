@@ -1,16 +1,22 @@
-# avaliacao_pdm_ii
+# Avaliação PDM II
 
-A new Flutter project.
+## Yan Ribeiro de Oliveira
 
-## Getting Started
+Você deverá desenvolver um aplicativo em Flutter que Cadastre em um banco de dados Firebase as seguintes informações de um artista:
 
-This project is a starting point for a Flutter application.
+Nome: String
+Imagem Perfil: String
+Email: String
+Senha: String
+Musicas: []
 
-A few resources to get you started if this is your first Flutter project:
+No campo Músicas você adicionará as músicas escritas por este artista contendo as seguintes informações:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Nome Musica: String
+Duração: String
+Estilo : String
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Atividade Extra: Tente exibir a imagem do perfil no momento que o cadastro for realizado. (4 pontos extras)
+
+[Link do Projeto](https://github.com/Yan22Oliveira/Avalia-o-PDM-II.git)
+
