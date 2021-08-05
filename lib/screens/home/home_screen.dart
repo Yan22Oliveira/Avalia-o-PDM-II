@@ -6,16 +6,16 @@ import '../../api/api.dart';
 import '../../helpers/helpers.dart';
 
 import './componenes/card_artista.dart';
-
 import '../cadastrar_artista/cadastrar_artista_screen.dart';
+import '../login/login_screen.dart';
 
 class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Consumer<ListaArtistas>(
+    return Consumer2<ListaArtistas,Login>(
 
-      builder: (_,listaArtista,__){
+      builder: (_,listaArtista,login,__){
 
         return Scaffold(
           backgroundColor: colorFundo,
@@ -29,6 +29,20 @@ class HomeScreen extends StatelessWidget {
             ),
             centerTitle: true,
             elevation: 0,
+            actions: [
+              IconButton(
+                  onPressed: (){
+                    login.sair();
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(builder: (context) => LoginScreen(),
+                      ),
+                    );
+                  },
+                  tooltip: 'Sair',
+                  icon: Icon(Icons.exit_to_app,color: Colors.white,),
+              ),
+              const SizedBox(width: 8,),
+            ],
           ),
           floatingActionButton: FloatingActionButton(
             backgroundColor: colorRedSalsa,
